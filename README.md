@@ -44,12 +44,12 @@ There are 3 output options available:
 
 1. Output in Laari
 
-	$money->inLaari();
+		$money->inLaari();
 
 2. Output in Rufiyaa
 
-	$money->inRufiyaa();
+		$money->inRufiyaa();
 
 3. Output in Rufiyaa and Laari
 
-	$money->inRufiyaaAndLaari();
+		$money->inRufiyaaAndLaari();
