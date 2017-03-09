@@ -33,7 +33,7 @@ class MoneyManager
 
     public function inRufiyaaAndLaari()
     {
-        return number_format($this->laari / 100, 2);
+        return number_format($this->laari / 100, 2, '.', '');
     }
 
     public function add($laari)
