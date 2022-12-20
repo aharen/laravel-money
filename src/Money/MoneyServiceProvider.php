@@ -1,8 +1,8 @@
 <?php
 
-namespace aharen\Money;
+namespace Aharen\Money;
 
-use aharen\Money\MoneyManager;
+use Aharen\Money\MoneyManager;
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 
 class MoneyServiceProvider extends LaravelServiceProvider

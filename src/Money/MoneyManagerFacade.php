@@ -1,6 +1,6 @@
 <?php
 
-namespace aharen\Money;
+namespace Aharen\Money;
 
 use Illuminate\Support\Facades\Facade;
 
