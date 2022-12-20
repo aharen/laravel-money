@@ -21,13 +21,13 @@ Simple class with Facade to handle money for Laravel 5. The class stores and cal
 Initiate from either Rufiyaa
 
 ```php
-	$money = Money::fromRufiyaa(10);
+$money = Money::fromRufiyaa(10);
 ```
 
 or Laari
 
 ```php
-	$money = Money::fromLaari(1000);
+$money = Money::fromLaari(1000);
 ```
 
 ### Addition
@@ -35,7 +35,7 @@ or Laari
 Expects the provided ammount to be added in Laari
 
 ```php
-  Money::fromRufiyaa(20)
+Money::fromRufiyaa(20)
          ->add(100) // 1 rufiyaa
          ->inRufiyaa();
 ```
@@ -43,7 +43,7 @@ Expects the provided ammount to be added in Laari
 Adding other money objects
 
 ```php
-  Money::fromRufiyaa(20)
+Money::fromRufiyaa(20)
          ->add(Money::fromRufiyaa(20.5))
          ->inRufiyaa();
 ```
@@ -53,7 +53,7 @@ Adding other money objects
 Expects the provided ammount to be subtracted in Laari
 
 ```php
-   Money::fromRufiyaa(20)
+Money::fromRufiyaa(20)
          ->subtract(100) // 1 rufiyaa
          ->inRufiyaa();
 ```
@@ -61,7 +61,7 @@ Expects the provided ammount to be subtracted in Laari
 Subtracting other money objects
 
 ```php
-  Money::fromRufiyaa(20)
+Money::fromRufiyaa(20)
          ->subtract(Money::fromRufiyaa(5)
          ->inRufiyaa();
 ```
@@ -71,17 +71,17 @@ Subtracting other money objects
 Expects the provided ammount to be multiplied in Laari
 
 ```php
-      Money::fromRufiyaa(2)
-             ->multiply(200) // 2 rufiyaa
-             ->inRufiyaa();
+Money::fromRufiyaa(2)
+      ->multiply(200) // 2 rufiyaa
+      ->inRufiyaa();
 ```
 
 Multiplying other money objects
 
 ```php
-  Money::fromRufiyaa(20)
-         ->multiply(Money::fromRufiyaa(5))
-         ->inRufiyaa();
+Money::fromRufiyaa(20)
+       ->multiply(Money::fromRufiyaa(5))
+       ->inRufiyaa();
 ```
 
 ### Division
@@ -89,17 +89,17 @@ Multiplying other money objects
 Expects the provided ammount to be multiplied in Laari
 
 ```php
-      Money::fromRufiyaa(4)
-             ->divide(200) // 2 rufiyaa
-             ->inRufiyaa();
+Money::fromRufiyaa(4)
+       ->divide(200) // 2 rufiyaa
+       ->inRufiyaa();
 ```
 
 Dividing other money objects
 
 ```php
-  Money::fromRufiyaa(4)
-         ->divide(Money::fromRufiyaa(2))
-         ->inRufiyaa();
+Money::fromRufiyaa(4)
+       ->divide(Money::fromRufiyaa(2))
+       ->inRufiyaa();
 ```
 
 ### Chaining Methods
@@ -108,9 +108,9 @@ You have the ability to manipulate the values in a chainable way.
 
 ```php
 Money::fromRufiyaa(20)
-            ->add(200) // 2 rufiyaa
-            ->subtract(100) // 1 rufiyaa
-            ->inRufiyaa();
+       ->add(200) // 2 rufiyaa
+       ->subtract(100) // 1 rufiyaa
+       ->inRufiyaa();
 ```
 
 ### Output
