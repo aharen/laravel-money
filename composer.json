@@ -8,10 +8,23 @@
 		"name": "Ahmed Khusaam",
 		"email": "hello@khusaam.com"
 	}],
+	"require": {
+        "php": "^7.3|^8.0",
+        "illuminate/support": "^7.0|^8.0|^9.0"
+    },
+	"require-dev": {
+        "graham-campbell/testbench": "^5.7",
+        "phpunit/phpunit": "^8.5|^9.5.10"
+    },
 	"minimum-stability": "dev",
 	"autoload": {
 		"psr-4": {
-			"aharen\\": "src/"
+			"Aharen\\": "src/"
 		}
-	}
+	},
+	"autoload-dev": {
+        "psr-4": {
+            "Aharen\\Tests\\": "tests/"
+        }
+    }
 }
